@@ -1,0 +1,383 @@
+html {
+    font-size: 1em;
+    
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 98vw;
+    background-image: url(assets/images/floating_elements.svg);
+}
+
+header {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2rem;
+    align-items: center;
+    font-weight: 800;
+}
+header img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 100%;
+    margin-left: 1rem;
+}
+header menu {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+    margin-right: 4rem;
+    text-transform: uppercase;
+}
+header menu span {
+    padding-right: 1rem;
+}
+header menu button {
+    background-color: #4BA87D;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: 10% 15% 4% 11% 4% 4% 42% 10%;
+    grid-template-rows: 10% 40% 14.3% 25.7% 10%;
+    align-items: center;
+}
+main h1 {
+    grid-area: 2/2/3/7;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    z-index: 3;
+    align-self: end;
+}
+.maingirl {
+    grid-area: 1/5/6/8;
+    z-index: 2;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main p {
+    grid-area: 3/2/4/6;
+    z-index: 3;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.try {
+    grid-area: 4/2/5/3;
+    z-index: 3;
+    font-weight: 900;
+    background-color: #4BA87D;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    padding: calc(0.5rem + 2px) calc(1rem + 2px);
+    cursor: pointer;
+    align-self: end;
+    }
+.demo {
+    grid-area: 4/4/5/6;
+    z-index: 3;
+    font-weight: 900;
+    background-color: #FFFFFF;
+    color: #4BA87D;
+    text-transform: uppercase;
+    border: 2px solid #4BA87D;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    align-self: end;
+    }
+
+.video {
+    display: grid;
+    width: 100%;
+    max-height: 80vh;
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+}
+.video img {
+    grid-row: 2/4;
+    grid-column: 2/3;
+    z-index: 1;
+    width: 100%;
+}
+.video p {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    z-index: 2;
+    align-self: end;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color:#FFFFFF;
+    font-size: calc(10px + 3vw);
+    text-align: center;
+}
+.video button {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    align-self: start;
+    z-index: 2;
+    font-weight: 900;
+    background-color: #FFFFFF;
+    color: #4BA87D;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.source {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 10% 20% 5% 20% 5% 30% 10%;
+    grid-template-rows: 1% 14.8% 33.2% 7.9% 7.9% 19.4% 14.8% 1%;
+    background-color: #CAEAC7;
+}
+img.girl {
+    grid-area: 2/2/4/3;
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    align-self: end;
+}
+div.girl {
+    grid-area: 4/2/7/3;
+    background-color: #FFFFFF;
+    align-self: start;
+    padding: 0.8rem;
+}
+img.people  {
+    grid-area: 3/4/6/5;
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    align-self: end;
+}
+div.people {
+    grid-area: 6/4/8/5;
+    background-color: #FFFFFF;
+    align-self: start;
+    padding: 0.8rem;
+}
+#text {
+    grid-area: 3/6/7/7;
+    align-self: stretch;
+}
+h2 {   
+    font-family: 'Playfair Display', serif;
+    font-size: 2.7rem;
+    font-weight: 900;
+}
+.source div a {
+    color: #4BA87D;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.names {
+    display: grid;
+    grid-template-columns: 10% 24% 4% 24% 4% 24% 10%;
+    grid-template-rows: 1fr;
+    max-height: 35vh;
+    margin-top: 2rem;
+}
+.names img {
+    z-index: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.names p {
+    z-index: 2;
+    color: #FFFFFF;
+    align-self: end;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    text-shadow: #000000 2px 0 10px;
+}
+.frankie {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.camile {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.elayne {
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+.names ::first-line {
+    font-weight: 900;
+    font-size: 2.1rem;
+}
+
+.email {
+    display: grid;
+    grid-template-columns: 26% 30% 18% 26%;
+    grid-template-rows: 1fr 0.6fr;
+    max-height: 35vh;
+}
+h3 {
+    grid-area: 1/1/2/5;
+    justify-self: center;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+#form {
+    grid-area: 2/2/3/3;
+    padding: 0.5rem 1rem;
+    border: #9F9F9F 1px solid;
+    margin-right: 1rem;
+}
+#list {
+    grid-area: 2/3/3/4;
+    background-color: #4BA87D;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+#logosbig {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3rem;
+    width: 70%;
+}
+
+@media not (max-width: 479px)  {
+    #forsmallonly, #logossmall {display: none;}
+}
+@media (min-width: 768px) and (max-width: 900px) {
+    html {font-size: 12px;}
+    
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    html {font-size: 10px;}
+
+    .try {margin-right: 3px;
+        grid-area: 4/2/5/4;}
+    .demo {margin-left: 3px;
+        grid-area: 4/4/5/7;}
+    .maingirl {grid-area: 1/4/6/8;}
+    main h1 {font-size: 2.4rem;
+        grid-area: 2/2/3/8;}
+
+    .video p, h3, h4 {font-size: 2.2rem;}
+
+    h2 {font-size: 1.8rem;}
+    .source {grid-template-columns: 5% 27% 3% 27% 3% 30% 5%;
+    height: 58vh;}
+    #text {align-self: center;}
+
+    .names {grid-template-columns: 5% 28% 3% 28% 3% 28% 5%;}
+    .email {height: 20vh;}
+
+    h4 {margin-top: 2rem;}
+    #logosbig {margin-left: 4%;
+        margin-right: 4%;
+        width: 90%;}
+}
+
+@media (max-width: 479px) {
+    html {font-size: 12px;}
+    body {width: 100vw}
+
+    header {grid-template-columns: 0.7fr 1fr;
+        margin-bottom: 1rem;}
+    header menu span, #forbigonly {display: none;}
+    header menu {margin-right: 2rem;}
+
+    main {grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.6fr 3fr 0.6fr 0.6fr;
+        column-gap: 0.4rem;
+        height: fit-content;}
+    main h1 {grid-area: 1/1/3/3;
+        font-size: 3rem;
+        align-self: start;
+        margin: 0px;}
+    .maingirl {grid-area: 2/1/3/3;
+        padding: 0px;}
+    main p {grid-area: 3/1/4/3;
+        align-self: start;}
+    .try {grid-area: 4/1/5/2;}
+    .demo {grid-area: 4/2/5/3;}
+
+    .video {grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+        grid-template-columns: 1fr;}
+    .video img, .video p, .video button {grid-column: 1/2;}
+    .video p {font-size: 2.3rem;}
+
+    .source {grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 23.7% 15.5% 0.5% 23.7% 15.5% 21.9%;
+        height: 730px;}
+    img.girl {grid-area: 1/1/2/3;
+        height: 100%;}
+    div.girl {grid-area: 2/1/3/3}
+    img.people {grid-area: 4/2/5/4;
+        height: 100%;}
+    div.people {grid-area: 5/2/6/4; 
+        margin: 0px;}
+    #text {grid-area: 6/1/7/4;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+        align-self: center;}
+    h2 {margin: 7px 0px 0px 0px;
+        font-size: 2.2rem;}
+
+    .names {grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 32% 2% 32% 2% 32%;
+        max-height: 690px;}
+    .frankie {grid-area: 1/2/2/3;}
+    .camile {grid-area: 3/2/4/3;}
+    .elayne {grid-area: 5/2/6/3;}
+
+    .email {grid-template-columns: 1fr;
+        grid-template-rows: 60% 20% 20%;
+        max-height: none;
+        height: 250px;
+        margin-top: 1rem;}
+    h3 {grid-area: 1/1/2/2;
+        font-size: 2.2rem;
+        margin: 0px;
+        padding: 0px;
+        align-self: center;}    
+    #form {grid-area: 2/1/3/2;
+        margin: 0.5rem 1rem;}
+    #list {grid-area: 3/1/4/2;
+        margin: 0.5rem 5rem;}
+
+    h4 {font-size: 2.2rem;}
+    #logosbig {display: none;}
+    #logossmall {margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 2rem;
+        width: 84%;}
+}
